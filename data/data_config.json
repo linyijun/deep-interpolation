@@ -1,0 +1,98 @@
+{
+  "base_path": "/Users/yijunlin/JupyterNotebook/data/beijing/",
+  "time_range": [
+    "2017-11-05",
+    "2017-11-30"
+  ],
+  "target": {
+    "name": "aq",
+    "file_name": "beijing_3000m_grid_aq.csv",
+    "column_set": [
+      "gid",
+      "timestamp",
+      "PM2.5",
+      "PM10",
+      "NO2",
+      "CO",
+      "O3",
+      "SO2"
+    ],
+    "features": [
+      "PM2.5"
+    ]
+  },
+  "dynamic": {
+    "names": [
+      "meo"
+    ],
+    "meo": {
+      "file_name": "beijing_3000m_grid_meo.csv",
+      "column_set": [
+        "gid",
+        "timestamp",
+        "temperature",
+        "pressure",
+        "humidity",
+        "wind_direction",
+        "wind_speed/kph"
+      ],
+      "features": [
+        "temperature",
+        "pressure",
+        "humidity",
+        "wind_direction",
+        "wind_speed/kph"
+      ]
+    }
+  },
+  "static": {
+    "names": [
+
+      "coord",
+      "geo"
+    ],
+    "coord": {
+      "file_name": "beijing_3000m_grid_coord.csv",
+      "column_set": [
+        "gid",
+        "lon",
+        "lat",
+        "geom"
+      ],
+      "features": [
+        "lon",
+        "lat"
+      ]
+    },
+    "geo": {
+      "file_name": "beijing_3000m_grid_geo_feature.csv",
+      "column_set": [
+        "gid",
+        "feature_type",
+        "geo_feature",
+        "value",
+        "measurement",
+        "uid"
+      ],
+      "features": [
+        "landuse_a",
+        "natural",
+        "natural_a",
+        "pois",
+        "pois_a",
+        "railways",
+        "roads",
+        "traffic",
+        "traffic_a",
+        "transport",
+        "transport_a",
+        "water_a",
+        "waterways"
+      ],
+      "exempt_types": [
+        "unknown",
+        "unclassified"
+      ]
+    }
+  }
+}
